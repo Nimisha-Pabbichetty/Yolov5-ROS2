@@ -1,37 +1,35 @@
 #! /usr/bin/env python3
 
 
-import roslib
-import rospy
-from std_msgs.msg import Header
-from std_msgs.msg import String
-from sensor_msgs.msg import CompressedImage
-from sensor_msgs.msg import Image
-IMAGE_WIDTH=1241
-IMAGE_HEIGHT=376
-
-import sys
-sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
-
-
-
-
-import os
-import time
-import cv2
-import torch
-from numpy import random
-import torch.backends.cudnn as cudnn
-import numpy as np
-from models.experimental import attempt_load
+from matplotlib import pyplot as plt
+from utils.torch_utils import select_device, load_classifier, time_synchronized
 from utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords,
     xyxy2xywh, plot_one_box, strip_optimizer, set_logging)
-from utils.torch_utils import select_device, load_classifier, time_synchronized
+from models.experimental import attempt_load
+import numpy as np
+import torch.backends.cudnn as cudnn
+from numpy import random
+import torch
+import cv2
+import time
+import os
+import sys
+import roslib
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import Header
+from std_msgs.msg import String
+from ros_yolo.msg import BoundingBoxes, BoundingBox
+from sensor_msgs.msg import CompressedImage
+from sensor_msgs.msg import Image
+IMAGE_WIDTH = 1241
+IMAGE_HEIGHT = 376
 
-from matplotlib import pyplot as plt
+# sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 
-ros_image=0
+
+ros_image = 0
 
 
 def letterbox(img, new_shape=(640, 640), color=(114, 114, 114), auto=True, scaleFill=False, scaleup=True):
@@ -48,13 +46,15 @@ def letterbox(img, new_shape=(640, 640), color=(114, 114, 114), auto=True, scale
     # Compute padding
     ratio = r, r  # width, height ratios
     new_unpad = int(round(shape[1] * r)), int(round(shape[0] * r))
-    dw, dh = new_shape[1] - new_unpad[0], new_shape[0] - new_unpad[1]  # wh padding
+    dw, dh = new_shape[1] - new_unpad[0], new_shape[0] - \
+        new_unpad[1]  # wh padding
     if auto:  # minimum rectangle
         dw, dh = np.mod(dw, 32), np.mod(dh, 32)  # wh padding
     elif scaleFill:  # stretch
         dw, dh = 0.0, 0.0
         new_unpad = (new_shape[1], new_shape[0])
-        ratio = new_shape[1] / shape[1], new_shape[0] / shape[0]  # width, height ratios
+        ratio = new_shape[1] / shape[1], new_shape[0] / \
+            shape[0]  # width, height ratios
 
     dw /= 2  # divide padding into 2 sides
     dh /= 2
@@ -63,18 +63,23 @@ def letterbox(img, new_shape=(640, 640), color=(114, 114, 114), auto=True, scale
         img = cv2.resize(img, new_unpad, interpolation=cv2.INTER_LINEAR)
     top, bottom = int(round(dh - 0.1)), int(round(dh + 0.1))
     left, right = int(round(dw - 0.1)), int(round(dw + 0.1))
-    img = cv2.copyMakeBorder(img, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color)  # add border
+    img = cv2.copyMakeBorder(
+        img, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color)  # add border
     return img, ratio, (dw, dh)
+
+
 def loadimg(img):  # 接受opencv图片
-    img_size=640
-    cap=None
-    path=None
+    img_size = 640
+    cap = None
+    path = None
     img0 = img
     img = letterbox(img0, new_shape=img_size)[0]
     img = img[:, :, ::-1].transpose(2, 0, 1)  # BGR to RGB, to 3x416x416
     img = np.ascontiguousarray(img)
     return path, img, img0, cap
 # src=cv2.imread('biye.jpg')
+
+
 def detect(img):
 
     time1 = time.time()
@@ -86,14 +91,16 @@ def detect(img):
     #plt.imshow(dataset[2][:, :, ::-1])
     names = model.module.names if hasattr(model, 'module') else model.names
     #colors = [[random.randint(0, 255) for _ in range(3)] for _ in range(len(names))]
-    #colors=[[0,255,0]]
+    # colors=[[0,255,0]]
     augment = 'store_true'
-    conf_thres = 0.3
+    conf_thres = 0.4
     iou_thres = 0.45
-    classes = (0,1,2,3,5,7)
+    classes = (0, 1, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 32, 33, 34, 35, 39, 40,
+               41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79)
     agnostic_nms = 'store_true'
     img = torch.zeros((1, 3, imgsz, imgsz), device=device)  # init img
-    _ = model(img.half() if half else img) if device.type != 'cpu' else None  # run once
+    # run once
+    _ = model(img.half() if half else img) if device.type != 'cpu' else None
     path = dataset[0]
     img = dataset[1]
     im0s = dataset[2]
@@ -101,70 +108,105 @@ def detect(img):
     img = torch.from_numpy(img).to(device)
     img = img.half() if half else img.float()  # uint8 to fp16/32
     img /= 255.0  # 0 - 255 to 0.0 - 1.0
-
+    
+  
     time2 = time.time()
     if img.ndimension() == 3:
         img = img.unsqueeze(0)
     # Inference
     pred = model(img, augment=augment)[0]
     # Apply NMS
-    pred = non_max_suppression(pred, conf_thres, iou_thres, classes=classes, agnostic=agnostic_nms)
-
+    pred = non_max_suppression(
+        pred, conf_thres, iou_thres, classes=classes, agnostic=agnostic_nms)
+    boundingBoxes=BoundingBoxes()
+    oneBoundingBox=BoundingBox()
     view_img = 1
     save_txt = 1
     save_conf = 'store_true'
     time3 = time.time()
-
+    #print("pred",pred)
     for i, det in enumerate(pred):  # detections per image
+        #print("begin")
+        cnt=0
         p, s, im0 = path, '', im0s
         s += '%gx%g ' % img.shape[2:]  # print string
         gn = torch.tensor(im0.shape)[[1, 0, 1, 0]]  # normalization gain whwh
         if det is not None:
-            #print(det)
+            #print("det",det)
+            #print("i",i)
             # Rescale boxes from img_size to im0 size
-            det[:, :4] = scale_coords(img.shape[2:], det[:, :4], im0.shape).round()
+            det[:, :4] = scale_coords(
+                img.shape[2:], det[:, :4], im0.shape).round()
             # Print results
             for c in det[:, -1].unique():
                 n = (det[:, -1] == c).sum()  # detections per class
                 s += '%g %ss, ' % (n, names[int(c)])  # add to string
+                
                 # Write results
             for *xyxy, conf, cls in reversed(det):
                 if save_txt:  # Write to file
-                    xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh
-                    line = (cls, conf, *xywh) if save_conf else (cls, *xywh)  # label format
+                    xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) /
+                            gn).view(-1).tolist()  # normalized xywh
+                    line = (cls, conf, *xywh) if save_conf else (cls,
+                                                                 *xywh)  # label format
                 if view_img:  # Add bbox to image
                     label = '%s %.2f' % (names[int(cls)], conf)
-                    plot_one_box(xyxy, im0, label=label, color=[0,255,0], line_thickness=3)
+                    print(label)
+                    #print("label",label)
+                    plot_one_box(xyxy, im0, label=label, color=[
+                                 0, 255, 0], line_thickness=3)
+                    #print(label,xyxy)
+                    #print("sep",cnt)
+                    oneBoundingBox.xmin= int(xyxy[0])
+                    oneBoundingBox.ymin= int(xyxy[1])
+                    oneBoundingBox.xmax= int(xyxy[2])
+                    oneBoundingBox.ymax= int(xyxy[3])
+                    oneBoundingBox.id=cnt
+                    oneBoundingBox.Class=names[int(cls)]
+                    oneBoundingBox.probability=float(conf)
+                    boundingBoxes.bounding_boxes.append(oneBoundingBox)
+                    cnt+=1
+                    
+                
+                    
     time4 = time.time()
-    print('************')
+    '''print('************')
     print('2-1', time2 - time1)
     print('3-2', time3 - time2)
     print('4-3', time4 - time3)
-    print('total',time4-time1)
+    print('total', time4-time1)'''
     out_img = im0[:, :, [2, 1, 0]]
-    ros_image=out_img
+    ros_image = out_img
     cv2.imshow('YOLOV5', out_img)
     a = cv2.waitKey(1)
     #### Create CompressedIamge ####
     publish_image(im0)
+    boundingBoxes.header.stamp = rospy.Time.now()
+    boundingBoxes.header.frame_id = "detection"
+    #boundingBoxes.image_header = headerBuff_[(buffIndex_ + 1) % 3]
+    boundingBoxesPublisher_.publish(boundingBoxes)
+
 
 def image_callback_1(image):
     global ros_image
-    ros_image = np.frombuffer(image.data, dtype=np.uint8).reshape(image.height, image.width, -1)
+    ros_image = np.frombuffer(image.data, dtype=np.uint8).reshape(
+        image.height, image.width, -1)
     with torch.no_grad():
         detect(ros_image)
+
+
 def publish_image(imgdata):
-    image_temp=Image()
+    image_temp = Image()
     header = Header(stamp=rospy.Time.now())
     header.frame_id = 'map'
-    image_temp.height=IMAGE_HEIGHT
-    image_temp.width=IMAGE_WIDTH
-    image_temp.encoding='rgb8'
-    image_temp.data=np.array(imgdata).tostring()
-    #print(imgdata)
-    #image_temp.is_bigendian=True
-    image_temp.header=header
-    image_temp.step=1241*3
+    image_temp.height = IMAGE_HEIGHT
+    image_temp.width = IMAGE_WIDTH
+    image_temp.encoding = 'rgb8'
+    image_temp.data = np.array(imgdata).tostring()
+    # print(imgdata)
+    # image_temp.is_bigendian=True
+    image_temp.header = header
+    image_temp.step = 1241*3
     image_pub.publish(image_temp)
 
 
@@ -179,14 +221,14 @@ if __name__ == '__main__':
     imgsz = check_img_size(imgsz, s=model.stride.max())  # check img_size
     if half:
         model.half()  # to FP16
-    '''
-    模型初始化
-    '''
-    rospy.init_node('ros_yolo')
-    image_topic_1 = "/usb_cam/image_raw"
-    rospy.Subscriber(image_topic_1, Image, image_callback_1, queue_size=1, buff_size=52428800)
-    image_pub = rospy.Publisher('/yolo_result_out', Image, queue_size=1)
-    #rospy.init_node("yolo_result_out_node", anonymous=True)
     
+    #rospy.init_node('ros_yolo')
+    rclpy.init(args=args)
+    node = rclpy.create_node('ros_yolo')
+    image_topic_1 = "/camera/image"
+    node.create_subscription(Image, image_topic_1, image_callback_1,1) #queue size is 1 and buffer size should be 52428800
+    image_pub = node.create_publisher(Image,'/yolo_result_out',1)
+    boundingBoxesPublisher_ = node.create_publisher(BoundingBoxes,'/ros_yolo/bounding_boxes',1)
+    #rospy.init_node("yolo_result_out_node", anonymous=True)
 
-    rospy.spin()
+    rclpy.spin()

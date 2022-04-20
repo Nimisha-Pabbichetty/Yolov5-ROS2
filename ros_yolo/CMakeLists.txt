@@ -1,22 +1,31 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(ros_yolo)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
 
+# Add flags to support compiling on windows, since ROS2 supports it
+if(NOT WIN32)
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wall -Wextra")
+endif()
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  sensor_msgs
-  std_msgs
-)
-
+##find_package(catkin REQUIRED COMPONENTS
+  #roscpp
+  #rospy
+  #sensor_msgs
+  #std_msgs
+  #message_generation
+  #actionlib_msgs STILL NEED TO FIND EQUIVALENT
+#)
+find_package(ament_cmake REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-
+find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(sensors_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -48,11 +57,10 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+set(msg_files
+   "msg/BoundingBox.msg"
+   "msg/BoundingBoxes.msg"
+ )
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -62,17 +70,22 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
+set(action_files
+   "action/CheckForObject.action"
 #   Action2.action
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   sensor_msgs#   std_msgs
-# )
+#generate_messages(
+   #DEPENDENCIES
+   #sensor_msgs   std_msgs   actionlib_msgs 
+#)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+    ${msg_files}
+    ${action_files}
+    DEPENDENCIES builtin_interfaces std_msgs sensor_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -103,23 +116,32 @@ find_package(catkin REQUIRED COMPONENTS
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES ros_yolo
-#  CATKIN_DEPENDS roscpp rospy sensor_msgs std_msgs
-#  DEPENDS system_lib
-)
+#catkin_package(
+  #INCLUDE_DIRS include
+  #LIBRARIES ros_yolo
+  #CATKIN_DEPENDS roscpp rospy sensor_msgs std_msgs message_runtime
+ # DEPENDS system_lib
+#)
+ament_export_dependencies(rosidl_default_runtime sensor_msgs std_msgs rclcpp rclpy)
+ament_export_include_directories(include)
+ament_export_libraries(ros_yolo)
 
+ament_package()
+
+
+##install(
+ ## FILES rosbridge_mapping_rules.yaml
+  ##DESTINATION share/${PROJECT_NAME})
 ###########
 ## Build ##
 ###########
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-include_directories(
+#include_directories(
 # include
-  ${catkin_INCLUDE_DIRS}
-)
+  #${catkin_INCLUDE_DIRS}
+#)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
