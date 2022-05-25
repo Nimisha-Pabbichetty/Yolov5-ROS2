@@ -1,0 +1,61 @@
+[0.000000] (-) TimerEvent: {}
+[0.000971] (ros_yolo) JobQueued: {'identifier': 'ros_yolo', 'dependencies': OrderedDict()}
+[0.001116] (ros_yolo) JobStarted: {'identifier': 'ros_yolo'}
+[0.017765] (ros_yolo) JobProgress: {'identifier': 'ros_yolo', 'progress': 'cmake'}
+[0.018971] (ros_yolo) Command: {'cmd': ['/usr/bin/cmake', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo', '-DCMAKE_INSTALL_PREFIX=/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/install/ros_yolo'], 'cwd': '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/build/ros_yolo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('HOSTNAME', 'admin'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib:/root/drl_grasping/ros_ign/install/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('DRL_GRASPING_DEBUG_LEVEL', 'ERROR'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/root/drl_grasping/fyp_ws/install:/root/drl_grasping/fyp_ws/src/install:/root/drl_grasping/ros_ign/install'), ('ROS_DISTRO', 'rolling'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 driver>=450'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/rolling/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS2_DISTRO', 'rolling'), ('ROS_DOMAIN_ID', '69'), ('AMENT_PREFIX_PATH', '/root/drl_grasping/fyp_ws/install/drl_gpd:/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('DRL_GRASPING_DIR', '/root/drl_grasping'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/build/ros_yolo'), ('PYTHONPATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib/python3.8/site-packages:/root/drl_grasping/ros_ign/install/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/root/drl_grasping/fyp_ws/install/drl_gpd:/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling')]), 'shell': False}
+[0.042057] (ros_yolo) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.071007] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.071227] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099618] (-) TimerEvent: {}
+[0.151959] (ros_yolo) StdoutLine: {'line': b'-- Found rclcpp: 13.0.0 (/opt/ros/rolling/share/rclcpp/cmake)\n'}
+[0.199746] (-) TimerEvent: {}
+[0.203080] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.207834] (ros_yolo) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.5.0 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[0.257305] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299849] (-) TimerEvent: {}
+[0.333581] (ros_yolo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 5.0.0 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)\n'}
+[0.336247] (ros_yolo) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.24.0 (/opt/ros/rolling/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.363583] (ros_yolo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.399968] (-) TimerEvent: {}
+[0.500232] (-) TimerEvent: {}
+[0.574320] (ros_yolo) StdoutLine: {'line': b'-- Found rclpy: 3.0.1 (/opt/ros/rolling/share/rclpy/cmake)\n'}
+[0.574729] (ros_yolo) StdoutLine: {'line': b'-- Found sensor_msgs: 3.0.0 (/opt/ros/rolling/share/sensor_msgs/cmake)\n'}
+[0.600339] (-) TimerEvent: {}
+[0.700614] (-) TimerEvent: {}
+[0.745862] (ros_yolo) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[0.785207] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.800723] (-) TimerEvent: {}
+[0.901033] (-) TimerEvent: {}
+[1.001352] (-) TimerEvent: {}
+[1.057475] (ros_yolo) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/rolling/share/ament_cmake_ros/cmake)\n'}
+[1.101450] (-) TimerEvent: {}
+[1.201718] (-) TimerEvent: {}
+[1.302020] (-) TimerEvent: {}
+[1.395065] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.402118] (-) TimerEvent: {}
+[1.502435] (-) TimerEvent: {}
+[1.602767] (-) TimerEvent: {}
+[1.636040] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.672612] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.673141] (ros_yolo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/rolling/share/python_cmake_module/cmake)\n'}
+[1.702876] (-) TimerEvent: {}
+[1.705903] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.706063] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.706163] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.802994] (-) TimerEvent: {}
+[1.903305] (-) TimerEvent: {}
+[1.962555] (ros_yolo) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.8/dist-packages/numpy/core/include\n'}
+[1.991578] (ros_yolo) StderrLine: {'line': b'CMake Error at /opt/ros/rolling/share/ament_cmake_python/cmake/ament_python_install_package.cmake:33 (_ament_cmake_python_install_package):\n'}
+[1.991751] (ros_yolo) StderrLine: {'line': b'  _ament_cmake_python_install_package Function invoked with incorrect\n'}
+[1.991857] (ros_yolo) StderrLine: {'line': b'  arguments for function named: _ament_cmake_python_install_package\n'}
+[1.991956] (ros_yolo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.992055] (ros_yolo) StderrLine: {'line': b'  CMakeLists.txt:111 (ament_python_install_package)\n'}
+[1.992153] (ros_yolo) StderrLine: {'line': b'\n'}
+[1.992251] (ros_yolo) StderrLine: {'line': b'\n'}
+[2.003388] (ros_yolo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.003510] (-) TimerEvent: {}
+[2.003651] (ros_yolo) StdoutLine: {'line': b'See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/build/ros_yolo/CMakeFiles/CMakeOutput.log".\n'}
+[2.003916] (ros_yolo) StdoutLine: {'line': b'See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/build/ros_yolo/CMakeFiles/CMakeError.log".\n'}
+[2.011075] (ros_yolo) CommandEnded: {'returncode': 1}
+[2.040743] (ros_yolo) JobEnded: {'identifier': 'ros_yolo', 'rc': 1}
+[2.051470] (-) EventReactorShutdown: {}

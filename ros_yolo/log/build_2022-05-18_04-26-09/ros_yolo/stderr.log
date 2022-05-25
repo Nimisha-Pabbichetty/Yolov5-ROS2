@@ -1,0 +1,5 @@
+CMake Error at CMakeLists.txt:21 (ind_package):
+  Unknown CMake command "ind_package".
+
+
+make: *** [Makefile:1016: cmake_check_build_system] Error 1

@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:370 (file):
+  file INSTALL cannot find
+  "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/scripts/utils/__init__.py":
+  No such file or directory.
+
+

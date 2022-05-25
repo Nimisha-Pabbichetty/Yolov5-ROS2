@@ -18,11 +18,12 @@ endif()
   #actionlib_msgs STILL NEED TO FIND EQUIVALENT
 #)
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
-find_package(sensors_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
@@ -58,8 +59,8 @@ find_package(builtin_interfaces REQUIRED)
 
 ## Generate messages in the 'msg' folder
 set(msg_files
-   "msg/BoundingBox.msg"
-   "msg/BoundingBoxes.msg"
+   "msg/CustomBoundingBox.msg"
+   "msg/CustomBoundingBoxes.msg"
  )
 
 ## Generate services in the 'srv' folder
@@ -70,10 +71,10 @@ set(msg_files
 # )
 
 ## Generate actions in the 'action' folder
-set(action_files
-   "action/CheckForObject.action"
+#set(action_files
+  # "action/CheckForObject.action"
 #   Action2.action
-# )
+ #)
 
 ## Generate added messages and services with any dependencies listed here
 #generate_messages(
@@ -83,7 +84,7 @@ set(action_files
 
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
-    ${action_files}
+    #${action_files}
     DEPENDENCIES builtin_interfaces std_msgs sensor_msgs
 )
 
@@ -106,6 +107,19 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
+
+#ament_python_install_package(${PROJECT_NAME})
+
+install(PROGRAMS
+  ros_yolo/utils/activations.py
+  ros_yolo/utils/datasets.py
+  ros_yolo/utils/general.py
+  ros_yolo/utils/torch_utils.py
+  scripts/final_yolo.py
+  scripts/detect.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 ###################################
 ## catkin specific configuration ##

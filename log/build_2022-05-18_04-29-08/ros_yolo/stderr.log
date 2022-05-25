@@ -1,0 +1,7 @@
+CMake Error at /opt/ros/rolling/share/ament_cmake_python/cmake/ament_python_install_package.cmake:33 (_ament_cmake_python_install_package):
+  _ament_cmake_python_install_package Function invoked with incorrect
+  arguments for function named: _ament_cmake_python_install_package
+Call Stack (most recent call first):
+  CMakeLists.txt:111 (ament_python_install_package)
+
+

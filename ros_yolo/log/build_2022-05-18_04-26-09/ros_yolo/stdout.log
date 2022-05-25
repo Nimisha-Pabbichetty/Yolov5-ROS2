@@ -1,0 +1,6 @@
+-- Found ament_cmake: 1.1.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring incomplete, errors occurred!
+See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo/CMakeFiles/CMakeOutput.log".
+See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo/CMakeFiles/CMakeError.log".

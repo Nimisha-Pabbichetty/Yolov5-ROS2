@@ -1,9 +1,11 @@
 #! /usr/bin/env python3
 
+import sys
+sys.path.append('/home/user/fyp_ws/src/Yolov5-ROS2/ros_yolo/ros_yolo/utils')
 
 from matplotlib import pyplot as plt
-from utils.torch_utils import select_device, load_classifier, time_synchronized
-from utils.general import (
+from ros_yolo.utils.torch_utils import select_device, load_classifier, time_synchronized
+from ros_yolo.utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords,
     xyxy2xywh, plot_one_box, strip_optimizer, set_logging)
 from models.experimental import attempt_load
@@ -20,7 +22,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Header
 from std_msgs.msg import String
-from ros_yolo.msg import BoundingBoxes, BoundingBox
+from ros_yolo.msg import CustomBoundingBoxes, CustomBoundingBox
 from sensor_msgs.msg import CompressedImage
 from sensor_msgs.msg import Image
 IMAGE_WIDTH = 1241
@@ -118,8 +120,8 @@ def detect(img):
     # Apply NMS
     pred = non_max_suppression(
         pred, conf_thres, iou_thres, classes=classes, agnostic=agnostic_nms)
-    boundingBoxes=BoundingBoxes()
-    oneBoundingBox=BoundingBox()
+    boundingBoxes=CustomBoundingBoxes()
+    oneBoundingBox=CustomBoundingBox()
     view_img = 1
     save_txt = 1
     save_conf = 'store_true'
@@ -162,7 +164,7 @@ def detect(img):
                     oneBoundingBox.xmax= int(xyxy[2])
                     oneBoundingBox.ymax= int(xyxy[3])
                     oneBoundingBox.id=cnt
-                    oneBoundingBox.Class=names[int(cls)]
+                    oneBoundingBox.class1=names[int(cls)]
                     oneBoundingBox.probability=float(conf)
                     boundingBoxes.bounding_boxes.append(oneBoundingBox)
                     cnt+=1
@@ -228,7 +230,7 @@ if __name__ == '__main__':
     image_topic_1 = "/camera/image"
     node.create_subscription(Image, image_topic_1, image_callback_1,1) #queue size is 1 and buffer size should be 52428800
     image_pub = node.create_publisher(Image,'/yolo_result_out',1)
-    boundingBoxesPublisher_ = node.create_publisher(BoundingBoxes,'/ros_yolo/bounding_boxes',1)
+    boundingBoxesPublisher_ = node.create_publisher(CustomBoundingBoxes,'/ros_yolo/bounding_boxes',1)
     #rospy.init_node("yolo_result_out_node", anonymous=True)
 
     rclpy.spin()

@@ -1,0 +1,367 @@
+[0.000000] (-) TimerEvent: {}
+[0.000784] (ros_yolo) JobQueued: {'identifier': 'ros_yolo', 'dependencies': OrderedDict()}
+[0.000833] (ros_yolo) JobStarted: {'identifier': 'ros_yolo'}
+[0.017058] (ros_yolo) JobProgress: {'identifier': 'ros_yolo', 'progress': 'cmake'}
+[0.017193] (ros_yolo) Command: {'cmd': ['/usr/bin/cmake', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo', '-DCMAKE_INSTALL_PREFIX=/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo'], 'cwd': '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('HOSTNAME', 'admin'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib:/root/drl_grasping/ros_ign/install/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('DRL_GRASPING_DEBUG_LEVEL', 'ERROR'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install:/root/drl_grasping/ros_ign/install'), ('ROS_DISTRO', 'rolling'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 driver>=450'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/rolling/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS2_DISTRO', 'rolling'), ('ROS_DOMAIN_ID', '69'), ('AMENT_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('DRL_GRASPING_DIR', '/root/drl_grasping'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo'), ('PYTHONPATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib/python3.8/site-packages:/root/drl_grasping/ros_ign/install/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling')]), 'shell': False}
+[0.090161] (ros_yolo) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.099526] (-) TimerEvent: {}
+[0.163495] (ros_yolo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.170949] (ros_yolo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.199643] (-) TimerEvent: {}
+[0.258636] (ros_yolo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.260094] (ros_yolo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299773] (-) TimerEvent: {}
+[0.346849] (ros_yolo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.366332] (ros_yolo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.366892] (ros_yolo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.370561] (ros_yolo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.399897] (-) TimerEvent: {}
+[0.462219] (ros_yolo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.463815] (ros_yolo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500010] (-) TimerEvent: {}
+[0.557533] (ros_yolo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.576893] (ros_yolo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.577701] (ros_yolo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.581419] (ros_yolo) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.600136] (-) TimerEvent: {}
+[0.616701] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.617002] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.700229] (-) TimerEvent: {}
+[0.733117] (ros_yolo) StdoutLine: {'line': b'-- Found rclcpp: 13.0.0 (/opt/ros/rolling/share/rclcpp/cmake)\n'}
+[0.800349] (-) TimerEvent: {}
+[0.810359] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.821535] (ros_yolo) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.5.0 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[0.887786] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.900445] (-) TimerEvent: {}
+[0.983819] (ros_yolo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 5.0.0 (/opt/ros/rolling/share/rmw_implementation_cmake/cmake)\n'}
+[0.988465] (ros_yolo) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.24.0 (/opt/ros/rolling/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.000535] (-) TimerEvent: {}
+[1.019544] (ros_yolo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.020886] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.100676] (-) TimerEvent: {}
+[1.102988] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.103346] (ros_yolo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.194880] (ros_yolo) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.195232] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.200781] (-) TimerEvent: {}
+[1.273821] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.274122] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.300917] (-) TimerEvent: {}
+[1.358277] (ros_yolo) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.359698] (ros_yolo) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401030] (-) TimerEvent: {}
+[1.501292] (-) TimerEvent: {}
+[1.588181] (ros_yolo) StdoutLine: {'line': b'-- Found rclpy: 3.0.1 (/opt/ros/rolling/share/rclpy/cmake)\n'}
+[1.590590] (ros_yolo) StdoutLine: {'line': b'-- Found sensor_msgs: 3.0.0 (/opt/ros/rolling/share/sensor_msgs/cmake)\n'}
+[1.601401] (-) TimerEvent: {}
+[1.701665] (-) TimerEvent: {}
+[1.770896] (ros_yolo) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[1.801738] (-) TimerEvent: {}
+[1.814429] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.901875] (-) TimerEvent: {}
+[2.002170] (-) TimerEvent: {}
+[2.102514] (-) TimerEvent: {}
+[2.102816] (ros_yolo) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/rolling/share/ament_cmake_ros/cmake)\n'}
+[2.202649] (-) TimerEvent: {}
+[2.302976] (-) TimerEvent: {}
+[2.403279] (-) TimerEvent: {}
+[2.475535] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.503378] (-) TimerEvent: {}
+[2.603676] (-) TimerEvent: {}
+[2.703974] (-) TimerEvent: {}
+[2.723214] (ros_yolo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.758241] (ros_yolo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.761224] (ros_yolo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/rolling/share/python_cmake_module/cmake)\n'}
+[2.795866] (ros_yolo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.796265] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.796375] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.796475] (ros_yolo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[2.804108] (-) TimerEvent: {}
+[2.822713] (ros_yolo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.904195] (-) TimerEvent: {}
+[3.004533] (-) TimerEvent: {}
+[3.104975] (-) TimerEvent: {}
+[3.118389] (ros_yolo) StdoutLine: {'line': b'-- Using numpy include directory: /usr/local/lib/python3.8/dist-packages/numpy/core/include\n'}
+[3.160244] (ros_yolo) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.205059] (-) TimerEvent: {}
+[3.255200] (ros_yolo) StdoutLine: {'line': b'-- Generating done\n'}
+[3.259745] (ros_yolo) StdoutLine: {'line': b'-- Build files have been written to: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo\n'}
+[3.268906] (ros_yolo) CommandEnded: {'returncode': 0}
+[3.269876] (ros_yolo) JobProgress: {'identifier': 'ros_yolo', 'progress': 'build'}
+[3.272433] (ros_yolo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo', '--', '-j8', '-l8'], 'cwd': '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('HOSTNAME', 'admin'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib:/root/drl_grasping/ros_ign/install/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('DRL_GRASPING_DEBUG_LEVEL', 'ERROR'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install:/root/drl_grasping/ros_ign/install'), ('ROS_DISTRO', 'rolling'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 driver>=450'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/rolling/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS2_DISTRO', 'rolling'), ('ROS_DOMAIN_ID', '69'), ('AMENT_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('DRL_GRASPING_DIR', '/root/drl_grasping'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo'), ('PYTHONPATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib/python3.8/site-packages:/root/drl_grasping/ros_ign/install/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling')]), 'shell': False}
+[3.305187] (-) TimerEvent: {}
+[3.322043] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_symlink_ros_yolo\x1b[0m\n'}
+[3.322357] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__cpp\x1b[0m\n'}
+[3.322979] (ros_yolo) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.337319] (ros_yolo) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.346356] (ros_yolo) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_ros_yolo\n'}
+[3.359660] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_build_ros_yolo_egg\x1b[0m\n'}
+[3.405308] (-) TimerEvent: {}
+[3.505634] (-) TimerEvent: {}
+[3.605898] (-) TimerEvent: {}
+[3.706193] (-) TimerEvent: {}
+[3.770854] (ros_yolo) StdoutLine: {'line': b'running egg_info\n'}
+[3.771778] (ros_yolo) StdoutLine: {'line': b'creating ros_yolo.egg-info\n'}
+[3.772266] (ros_yolo) StdoutLine: {'line': b'writing ros_yolo.egg-info/PKG-INFO\n'}
+[3.772531] (ros_yolo) StdoutLine: {'line': b'writing dependency_links to ros_yolo.egg-info/dependency_links.txt\n'}
+[3.772747] (ros_yolo) StdoutLine: {'line': b'writing top-level names to ros_yolo.egg-info/top_level.txt\n'}
+[3.774436] (ros_yolo) StdoutLine: {'line': b"writing manifest file 'ros_yolo.egg-info/SOURCES.txt'\n"}
+[3.806322] (-) TimerEvent: {}
+[3.847907] (ros_yolo) StdoutLine: {'line': b"reading manifest file 'ros_yolo.egg-info/SOURCES.txt'\n"}
+[3.849103] (ros_yolo) StdoutLine: {'line': b"writing manifest file 'ros_yolo.egg-info/SOURCES.txt'\n"}
+[3.869835] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_generator_c\x1b[0m\n'}
+[3.888758] (ros_yolo) StdoutLine: {'line': b'[  5%] Built target ros_yolo__cpp\n'}
+[3.889102] (ros_yolo) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_ros_yolo_egg\n'}
+[3.893020] (ros_yolo) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_generator_c.dir/rosidl_generator_c/ros_yolo/msg/detail/custom_bounding_box__functions.c.o\x1b[0m\n'}
+[3.893789] (ros_yolo) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_generator_c.dir/rosidl_generator_c/ros_yolo/msg/detail/custom_bounding_boxes__functions.c.o\x1b[0m\n'}
+[3.903480] (ros_yolo) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.904442] (ros_yolo) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.906418] (-) TimerEvent: {}
+[3.907638] (ros_yolo) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.955900] (ros_yolo) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libros_yolo__rosidl_generator_c.so\x1b[0m\n'}
+[4.004587] (ros_yolo) StdoutLine: {'line': b'[ 20%] Built target ros_yolo__rosidl_generator_c\n'}
+[4.006505] (-) TimerEvent: {}
+[4.019500] (ros_yolo) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.019777] (ros_yolo) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.106608] (-) TimerEvent: {}
+[4.206926] (-) TimerEvent: {}
+[4.307254] (-) TimerEvent: {}
+[4.407594] (-) TimerEvent: {}
+[4.422403] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.445717] (ros_yolo) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_yolo/msg/detail/dds_fastrtps/custom_bounding_boxes__type_support.cpp.o\x1b[0m\n'}
+[4.446816] (ros_yolo) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_yolo/msg/detail/dds_fastrtps/custom_bounding_box__type_support.cpp.o\x1b[0m\n'}
+[4.449153] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_c\x1b[0m\n'}
+[4.474500] (ros_yolo) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_yolo/msg/custom_bounding_box__type_support.cpp.o\x1b[0m\n'}
+[4.476287] (ros_yolo) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_yolo/msg/custom_bounding_boxes__type_support.cpp.o\x1b[0m\n'}
+[4.491354] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.507718] (-) TimerEvent: {}
+[4.530837] (ros_yolo) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_yolo/msg/custom_bounding_box__type_support.cpp.o\x1b[0m\n'}
+[4.539939] (ros_yolo) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libros_yolo__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.540236] (ros_yolo) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_yolo/msg/custom_bounding_boxes__type_support.cpp.o\x1b[0m\n'}
+[4.540505] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.554700] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.568723] (ros_yolo) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_yolo/msg/detail/custom_bounding_box__type_support.c.o\x1b[0m\n'}
+[4.571032] (ros_yolo) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_yolo/msg/detail/custom_bounding_boxes__type_support.c.o\x1b[0m\n'}
+[4.586534] (ros_yolo) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_yolo/msg/detail/custom_bounding_box__type_support.cpp.o\x1b[0m\n'}
+[4.607836] (-) TimerEvent: {}
+[4.629759] (ros_yolo) StdoutLine: {'line': b'[ 51%] Built target ros_yolo__rosidl_typesupport_c\n'}
+[4.645637] (ros_yolo) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_yolo/msg/detail/custom_bounding_boxes__type_support.cpp.o\x1b[0m\n'}
+[4.646050] (ros_yolo) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C shared library libros_yolo__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.707957] (-) TimerEvent: {}
+[4.712707] (ros_yolo) StdoutLine: {'line': b'[ 56%] Built target ros_yolo__rosidl_typesupport_introspection_c\n'}
+[4.808087] (-) TimerEvent: {}
+[4.908468] (-) TimerEvent: {}
+[5.008855] (-) TimerEvent: {}
+[5.107232] (ros_yolo) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libros_yolo__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.108951] (-) TimerEvent: {}
+[5.167022] (ros_yolo) StdoutLine: {'line': b'[ 58%] Built target ros_yolo__rosidl_typesupport_cpp\n'}
+[5.209090] (-) TimerEvent: {}
+[5.258883] (ros_yolo) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libros_yolo__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.267249] (ros_yolo) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libros_yolo__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.309201] (-) TimerEvent: {}
+[5.357727] (ros_yolo) StdoutLine: {'line': b'[ 64%] Built target ros_yolo__rosidl_typesupport_introspection_cpp\n'}
+[5.369415] (ros_yolo) StdoutLine: {'line': b'[ 64%] Built target ros_yolo__rosidl_typesupport_fastrtps_cpp\n'}
+[5.384296] (ros_yolo) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.409317] (-) TimerEvent: {}
+[5.509604] (-) TimerEvent: {}
+[5.609915] (-) TimerEvent: {}
+[5.710196] (-) TimerEvent: {}
+[5.796904] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.810315] (-) TimerEvent: {}
+[5.817446] (ros_yolo) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_yolo/msg/detail/custom_bounding_box__type_support_c.cpp.o\x1b[0m\n'}
+[5.817882] (ros_yolo) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ros_yolo__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_yolo/msg/detail/custom_bounding_boxes__type_support_c.cpp.o\x1b[0m\n'}
+[5.910443] (-) TimerEvent: {}
+[6.010796] (-) TimerEvent: {}
+[6.111139] (-) TimerEvent: {}
+[6.211482] (-) TimerEvent: {}
+[6.221858] (ros_yolo) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libros_yolo__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.307217] (ros_yolo) StdoutLine: {'line': b'[ 74%] Built target ros_yolo__rosidl_typesupport_fastrtps_c\n'}
+[6.311587] (-) TimerEvent: {}
+[6.318686] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo\x1b[0m\n'}
+[6.330947] (ros_yolo) StdoutLine: {'line': b'[ 74%] Built target ros_yolo\n'}
+[6.342479] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__py\x1b[0m\n'}
+[6.356033] (ros_yolo) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.411704] (-) TimerEvent: {}
+[6.512031] (-) TimerEvent: {}
+[6.612401] (-) TimerEvent: {}
+[6.712726] (-) TimerEvent: {}
+[6.813058] (-) TimerEvent: {}
+[6.913345] (-) TimerEvent: {}
+[7.013685] (-) TimerEvent: {}
+[7.110359] (ros_yolo) StdoutLine: {'line': b'[ 76%] Built target ros_yolo__py\n'}
+[7.113793] (-) TimerEvent: {}
+[7.122602] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__python\x1b[0m\n'}
+[7.151361] (ros_yolo) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__python.dir/rosidl_generator_py/ros_yolo/msg/_custom_bounding_boxes_s.c.o\x1b[0m\n'}
+[7.151559] (ros_yolo) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__python.dir/rosidl_generator_py/ros_yolo/msg/_custom_bounding_box_s.c.o\x1b[0m\n'}
+[7.213927] (-) TimerEvent: {}
+[7.269262] (ros_yolo) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_yolo/libros_yolo__python.so\x1b[0m\n'}
+[7.314072] (-) TimerEvent: {}
+[7.323847] (ros_yolo) StdoutLine: {'line': b'[ 84%] Built target ros_yolo__python\n'}
+[7.336385] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.336603] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.336856] (ros_yolo) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ros_yolo__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.362327] (ros_yolo) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.364948] (ros_yolo) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.369586] (ros_yolo) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ros_yolo__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.414205] (-) TimerEvent: {}
+[7.476707] (ros_yolo) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.483591] (ros_yolo) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.484770] (ros_yolo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.514335] (-) TimerEvent: {}
+[7.531430] (ros_yolo) StdoutLine: {'line': b'[100%] Built target ros_yolo__rosidl_typesupport_c__pyext\n'}
+[7.538233] (ros_yolo) StdoutLine: {'line': b'[100%] Built target ros_yolo__rosidl_typesupport_introspection_c__pyext\n'}
+[7.544581] (ros_yolo) StdoutLine: {'line': b'[100%] Built target ros_yolo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.557712] (ros_yolo) CommandEnded: {'returncode': 0}
+[7.614437] (-) TimerEvent: {}
+[7.635464] (ros_yolo) JobProgress: {'identifier': 'ros_yolo', 'progress': 'install'}
+[7.648048] (ros_yolo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo'], 'cwd': '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo', 'env': OrderedDict([('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('HOSTNAME', 'admin'), ('IGNITION_VERSION', 'fortress'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib:/root/drl_grasping/ros_ign/install/lib:/opt/ros/rolling/opt/yaml_cpp_vendor/lib:/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('DRL_GRASPING_DEBUG_LEVEL', 'ERROR'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install:/root/drl_grasping/ros_ign/install'), ('ROS_DISTRO', 'rolling'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 driver>=450'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '1'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/rolling/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':1'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS2_DISTRO', 'rolling'), ('ROS_DOMAIN_ID', '69'), ('AMENT_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('DRL_GRASPING_DIR', '/root/drl_grasping'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo'), ('PYTHONPATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo/lib/python3.8/site-packages:/root/drl_grasping/ros_ign/install/lib/python3.8/site-packages:/opt/ros/rolling/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/root/drl_grasping/fyp_ws/src/install/ros_yolo:/root/drl_grasping/fyp_ws/src/install/drl_gpd:/root/drl_grasping/ros_ign/install:/opt/ros/rolling')]), 'shell': False}
+[7.658540] (ros_yolo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.658850] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ament_index/resource_index/rosidl_interfaces/ros_yolo\n'}
+[7.659119] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.659362] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.659579] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.659764] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_box.h\n'}
+[7.659938] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.660104] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.h\n'}
+[7.660237] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.h\n'}
+[7.660365] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__functions.h\n'}
+[7.660494] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__struct.h\n'}
+[7.660636] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__functions.c\n'}
+[7.660745] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__functions.c\n'}
+[7.660923] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__struct.h\n'}
+[7.661060] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__functions.h\n'}
+[7.661188] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_boxes.h\n'}
+[7.661295] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/library_path.sh\n'}
+[7.661401] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/library_path.dsv\n'}
+[7.661587] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_generator_c.so\n'}
+[7.661894] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_generator_c.so" to ""\n'}
+[7.662047] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.662243] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.662412] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.662570] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.662700] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[7.662840] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_fastrtps_c.h\n'}
+[7.662965] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_c.so\n'}
+[7.663417] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.663593] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.663750] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.663914] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.664060] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.664216] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.664369] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/dds_fastrtps\n'}
+[7.664473] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.664688] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.665159] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.665314] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.665478] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.665655] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.665798] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.c\n'}
+[7.665924] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_introspection_c.h\n'}
+[7.666030] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.c\n'}
+[7.666134] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_introspection_c.h\n'}
+[7.666268] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.666373] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_c.so\n'}
+[7.666601] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.666784] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_c.so\n'}
+[7.667185] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_c.so" to ""\n'}
+[7.667359] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.667555] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.667679] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_box.hpp\n'}
+[7.667807] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.667930] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__builder.hpp\n'}
+[7.668096] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__struct.hpp\n'}
+[7.668235] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__traits.hpp\n'}
+[7.668347] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__traits.hpp\n'}
+[7.668533] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__struct.hpp\n'}
+[7.668732] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__builder.hpp\n'}
+[7.668865] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_boxes.hpp\n'}
+[7.668997] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo\n'}
+[7.669159] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg\n'}
+[7.669308] (ros_yolo) StdoutLine: {'line': b'-- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail\n'}
+[7.669419] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.cpp\n'}
+[7.669602] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.669737] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.669848] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.cpp\n'}
+[7.669959] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_cpp.so\n'}
+[7.670124] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.670297] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_cpp.so\n'}
+[7.670828] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_cpp.so" to ""\n'}
+[7.670963] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/pythonpath.sh\n'}
+[7.671119] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/pythonpath.dsv\n'}
+[7.671355] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info\n'}
+[7.671578] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/PKG-INFO\n'}
+[7.671742] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/SOURCES.txt\n'}
+[7.671896] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/top_level.txt\n'}
+[7.672095] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/dependency_links.txt\n'}
+[7.672376] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo\n'}
+[7.672521] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.672694] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_c.c\n'}
+[7.672856] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/__init__.py\n'}
+[7.672993] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg\n'}
+[7.673129] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_boxes.py\n'}
+[7.673264] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/__init__.py\n'}
+[7.673400] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_box.py\n'}
+[7.673536] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_box_s.c\n'}
+[7.673684] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_boxes_s.c\n'}
+[7.673815] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/libros_yolo__python.so\n'}
+[7.673988] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.674119] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[7.674250] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.674382] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[7.714536] (-) TimerEvent: {}
+[7.716697] (ros_yolo) StdoutLine: {'line': b"Listing '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo'...\n"}
+[7.716872] (ros_yolo) StdoutLine: {'line': b"Compiling '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/__init__.py'...\n"}
+[7.716993] (ros_yolo) StdoutLine: {'line': b"Listing '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg'...\n"}
+[7.717108] (ros_yolo) StdoutLine: {'line': b"Compiling '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/__init__.py'...\n"}
+[7.717229] (ros_yolo) StdoutLine: {'line': b"Compiling '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_box.py'...\n"}
+[7.717341] (ros_yolo) StdoutLine: {'line': b"Compiling '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_boxes.py'...\n"}
+[7.721384] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.722014] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.722598] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.723291] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.723751] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[7.724490] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[7.724753] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__python.so\n'}
+[7.725281] (ros_yolo) StdoutLine: {'line': b'-- Set runtime path of "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__python.so" to ""\n'}
+[7.725560] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBox.idl\n'}
+[7.725843] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBoxes.idl\n'}
+[7.726095] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBox.msg\n'}
+[7.726375] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBoxes.msg\n'}
+[7.726646] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/ros_yolo/final_yolo.py\n'}
+[7.726885] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ament_index/resource_index/package_run_dependencies/ros_yolo\n'}
+[7.727167] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ament_index/resource_index/parent_prefix_path/ros_yolo\n'}
+[7.727444] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/ament_prefix_path.sh\n'}
+[7.727753] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/ament_prefix_path.dsv\n'}
+[7.727973] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/path.sh\n'}
+[7.728305] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/path.dsv\n'}
+[7.728512] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/local_setup.bash\n'}
+[7.728726] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/local_setup.sh\n'}
+[7.728923] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/local_setup.zsh\n'}
+[7.729158] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/local_setup.dsv\n'}
+[7.729463] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/package.dsv\n'}
+[7.729776] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ament_index/resource_index/packages/ros_yolo\n'}
+[7.730156] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_generator_cExport.cmake\n'}
+[7.730435] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.730708] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.730968] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.731339] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_cExport.cmake\n'}
+[7.731624] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.731886] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_generator_cppExport.cmake\n'}
+[7.732248] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.732502] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.732776] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_cppExport.cmake\n'}
+[7.733063] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yolo__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.733318] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/rosidl_cmake-extras.cmake\n'}
+[7.733537] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.733726] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.733909] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.734160] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.734356] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.734568] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.734826] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yoloConfig.cmake\n'}
+[7.734986] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/cmake/ros_yoloConfig-version.cmake\n'}
+[7.735230] (ros_yolo) StdoutLine: {'line': b'-- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/package.xml\n'}
+[7.738813] (ros_yolo) CommandEnded: {'returncode': 0}
+[7.814717] (-) TimerEvent: {}
+[7.849143] (ros_yolo) JobEnded: {'identifier': 'ros_yolo', 'rc': 0}
+[7.850614] (-) EventReactorShutdown: {}

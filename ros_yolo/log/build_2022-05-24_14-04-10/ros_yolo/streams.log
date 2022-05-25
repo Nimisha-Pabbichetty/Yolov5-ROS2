@@ -1,0 +1,128 @@
+[0.023s] Invoking command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo -- -j8 -l8
+[0.101s] [  2%] Built target ros_yolo__cpp
+[0.108s] [ 12%] Built target ros_yolo__rosidl_generator_c
+[0.113s] [ 12%] Built target ament_cmake_python_symlink_ros_yolo
+[0.144s] [ 23%] Built target ros_yolo__rosidl_typesupport_cpp
+[0.146s] [ 33%] Built target ros_yolo__rosidl_typesupport_fastrtps_cpp
+[0.150s] [ 43%] Built target ros_yolo__rosidl_typesupport_introspection_cpp
+[0.153s] [ 53%] Built target ros_yolo__rosidl_typesupport_introspection_c
+[0.154s] [ 64%] Built target ros_yolo__rosidl_typesupport_c
+[0.184s] [ 74%] Built target ros_yolo__rosidl_typesupport_fastrtps_c
+[0.212s] [ 74%] Built target ros_yolo
+[0.241s] [ 76%] Built target ros_yolo__py
+[0.283s] [ 84%] Built target ros_yolo__python
+[0.325s] [ 89%] Built target ros_yolo__rosidl_typesupport_c__pyext
+[0.327s] [100%] Built target ros_yolo__rosidl_typesupport_fastrtps_c__pyext
+[0.327s] [100%] Built target ros_yolo__rosidl_typesupport_introspection_c__pyext
+[0.561s] running egg_info
+[0.562s] writing ros_yolo.egg-info/PKG-INFO
+[0.563s] writing dependency_links to ros_yolo.egg-info/dependency_links.txt
+[0.563s] writing top-level names to ros_yolo.egg-info/top_level.txt
+[0.629s] reading manifest file 'ros_yolo.egg-info/SOURCES.txt'
+[0.630s] writing manifest file 'ros_yolo.egg-info/SOURCES.txt'
+[0.662s] [100%] Built target ament_cmake_python_build_ros_yolo_egg
+[0.677s] Invoked command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo -- -j8 -l8
+[0.779s] Invoking command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo
+[0.790s] -- Install configuration: ""
+[0.791s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ament_index/resource_index/rosidl_interfaces/ros_yolo
+[0.791s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.791s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.792s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_generator_c__visibility_control.h
+[0.792s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_box.h
+[0.792s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.792s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.h
+[0.792s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.h
+[0.793s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__functions.h
+[0.793s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__struct.h
+[0.793s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__functions.c
+[0.793s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__functions.c
+[0.794s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__struct.h
+[0.794s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__functions.h
+[0.794s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_boxes.h
+[0.794s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/library_path.sh
+[0.795s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/library_path.dsv
+[0.795s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_generator_c.so
+[0.795s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.795s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.795s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.796s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.796s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_fastrtps_c.h
+[0.796s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_fastrtps_c.h
+[0.796s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_c.so
+[0.797s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.797s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.797s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.797s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.797s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_fastrtps_cpp.hpp
+[0.798s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/dds_fastrtps
+[0.798s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp
+[0.798s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_fastrtps_cpp.so
+[0.798s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.799s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.799s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.799s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.c
+[0.799s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_introspection_c.h
+[0.799s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.c
+[0.800s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_introspection_c.h
+[0.800s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.800s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_c.so
+[0.801s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_c.so
+[0.801s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.801s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.801s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_box.hpp
+[0.801s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.802s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__builder.hpp
+[0.802s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__struct.hpp
+[0.802s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__traits.hpp
+[0.802s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__traits.hpp
+[0.803s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__struct.hpp
+[0.803s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__builder.hpp
+[0.803s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/custom_bounding_boxes.hpp
+[0.803s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo
+[0.803s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__type_support.cpp
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_box__rosidl_typesupport_introspection_cpp.hpp
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__rosidl_typesupport_introspection_cpp.hpp
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/include/ros_yolo/msg/detail/custom_bounding_boxes__type_support.cpp
+[0.804s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_introspection_cpp.so
+[0.805s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__rosidl_typesupport_cpp.so
+[0.805s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/pythonpath.sh
+[0.805s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/environment/pythonpath.dsv
+[0.805s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info
+[0.805s] -- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/PKG-INFO
+[0.805s] -- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/SOURCES.txt
+[0.806s] -- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/top_level.txt
+[0.806s] -- Installing: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages//ros_yolo.egg-info/dependency_links.txt
+[0.806s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo
+[0.806s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.806s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_c.c
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/__init__.py
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_boxes.py
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/__init__.py
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_box.py
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_box_s.c
+[0.807s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg/_custom_bounding_boxes_s.c
+[0.808s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/libros_yolo__python.so
+[0.808s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.808s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.808s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.808s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/_ros_yolo_s.ep.rosidl_typesupport_introspection_c.c
+[0.850s] Listing '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo'...
+[0.850s] Listing '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/msg'...
+[0.856s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.856s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.857s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/python3.8/site-packages/ros_yolo/ros_yolo_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.858s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/lib/libros_yolo__python.so
+[0.858s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBox.idl
+[0.858s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBoxes.idl
+[0.859s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBox.msg
+[0.859s] -- Up-to-date: /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/install/ros_yolo/share/ros_yolo/msg/CustomBoundingBoxes.msg
+[0.859s] CMake Error at cmake_install.cmake:370 (file):
+[0.859s]   file INSTALL cannot find
+[0.859s]   "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/scripts/utils/__init__.py":
+[0.859s]   No such file or directory.
+[0.860s] 
+[0.860s] 
+[0.861s] Invoked command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo

@@ -1,0 +1,7 @@
+{
+  "package_name": "ros_yolo",
+  "non_idl_tuples": [
+    "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo:msg/CustomBoundingBox.msg",
+    "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo:msg/CustomBoundingBoxes.msg"
+  ]
+}

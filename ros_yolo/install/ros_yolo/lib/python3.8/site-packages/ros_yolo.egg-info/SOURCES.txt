@@ -1,0 +1,9 @@
+setup.py
+ros_yolo/__init__.py
+ros_yolo.egg-info/PKG-INFO
+ros_yolo.egg-info/SOURCES.txt
+ros_yolo.egg-info/dependency_links.txt
+ros_yolo.egg-info/top_level.txt
+ros_yolo/msg/__init__.py
+ros_yolo/msg/_custom_bounding_box.py
+ros_yolo/msg/_custom_bounding_boxes.py

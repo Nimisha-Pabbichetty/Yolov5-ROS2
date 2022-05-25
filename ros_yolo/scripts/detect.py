@@ -1,7 +1,8 @@
 #! /usr/bin/env python3
 import sys
 sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
-
+sys.path.append('/home/user/fyp_ws/src/Yolov5-ROS2/ros_yolo/scripts')
+sys.path.append('/home/user/fyp_ws/src/Yolov5-ROS2/ros_yolo/ros_yolo/utils')
 import argparse
 import os
 import shutil
@@ -14,11 +15,11 @@ import torch.backends.cudnn as cudnn
 from numpy import random
 
 from models.experimental import attempt_load
-from utils.datasets import LoadStreams, LoadImages
-from utils.general import (
+from ros_yolo.utils.datasets import LoadStreams, LoadImages
+from ros_yolo.utils.general import (
     check_img_size, non_max_suppression, apply_classifier, scale_coords,
     xyxy2xywh, plot_one_box, strip_optimizer, set_logging)
-from utils.torch_utils import select_device, load_classifier, time_synchronized
+from ros_yolo.utils.torch_utils import select_device, load_classifier, time_synchronized
 
 
 def detect(save_img=False):

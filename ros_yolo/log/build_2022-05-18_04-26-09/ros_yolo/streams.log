@@ -1,0 +1,13 @@
+[0.018s] Invoking command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo -- -j8 -l8
+[0.056s] -- Found ament_cmake: 1.1.4 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.085s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.085s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.168s] CMake Error at CMakeLists.txt:21 (ind_package):
+[0.168s]   Unknown CMake command "ind_package".
+[0.169s] 
+[0.169s] 
+[0.169s] -- Configuring incomplete, errors occurred!
+[0.169s] See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo/CMakeFiles/CMakeOutput.log".
+[0.169s] See also "/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo/CMakeFiles/CMakeError.log".
+[0.171s] make: *** [Makefile:1016: cmake_check_build_system] Error 1
+[0.173s] Invoked command in '/root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/drl_grasping/fyp_ws/src/Yolov5-ROS2/ros_yolo/build/ros_yolo -- -j8 -l8
